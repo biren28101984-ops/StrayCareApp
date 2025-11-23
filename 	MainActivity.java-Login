@@ -1,0 +1,45 @@
+package com.example.straycare;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.*;
+import android.view.View;
+import android.content.Intent;
+
+public class MainActivity extends AppCompatActivity {
+
+    EditText etEmail, etPassword;
+    Button btnLogin;
+    TextView tvRegister;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        etEmail = findViewById(R.id.etEmail);
+        etPassword = findViewById(R.id.etPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        tvRegister = findViewById(R.id.tvRegister);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = etEmail.getText().toString();
+                String password = etPassword.getText().toString();
+
+                if (email.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Please enter both fields", Toast.LENGTH_SHORT).show();
+                } else if (email.equals("admin@straycare.com") && password.equals("admin123")) {
+                    Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                    // TODO: Move to Dashboard activity later
+                } else {
+                    Toast.makeText(MainActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        tvRegister.setOnClickListener(v ->
+                Toast.makeText(MainActivity.this, "Registration screen coming soon", Toast.LENGTH_SHORT).show());
+    }
+}
