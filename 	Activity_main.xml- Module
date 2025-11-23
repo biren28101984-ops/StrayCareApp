@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/titleApp"
+            android:text="Stray Care"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A73E8"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/subtitleApp"
+            android:text="Managing Stray Dog Issues"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- 8 Menu Buttons -->
+        <Button
+            android:id="@+id/btnUserManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Management"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnStrayTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stray Dog Tracking and Reporting"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnAdoption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adoption and Foster"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnSterilization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sterilization and Health Management"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnVolunteer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volunteer Management and Community Engagement"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnShelter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shelter Management"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnDonation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donation and Fundraising"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnAnalytics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analytics and Reporting"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#1A73E8"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
